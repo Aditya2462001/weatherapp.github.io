@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>Weather Web</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/8e821e60b4.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet"> 
+       <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fondamento:ital@1&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div class="startlogo">
+        <p class="logoname"><span>W</span><span>e</span><span>a</span><span>t</span><span>h</span><span>e</span><span>r</span>
+           <span>A</span><span>p</span><span>p</span>
+        </p>
+        <p class="logodet">Welcome to Aditya creation Vally....</p>
+      </div>
+      <section class="website">
+      <!-------navbar------------------->
+        <nav class="navbar" id="navbar">
+          <div class="logo">
+              <h2 class="city" id="cityname" >City</h2>
+          </div>  
+          <div class="bars">
+            <input type="checkbox" id="check">
+            <label for="check">
+           <div class="barbtn">
+          <div  class="barbtn1"></div>
+             <div class="barbtn2"></div>
+             <div  class="barbtn3"></div>
+           </div>         
+          <div class="menu">
+            <a href="#" onclick="firstpage()">HOME</a>
+            <a href="#" onclick="secondpage()">SPEED</a>
+            <a href="#" onclick="thirdpage()">HUMIDITY</a>
+            <a href="#" onclick="fourthpage()">SUNRISE/SUNSET</a>
+           <a href="#" onclick="fifthpage()">LAN/LAT</a>
+           
+          </div>
+          </div>
+        </label>
+        </nav>
+         <!------------------------------///////--navbar--/////////------------------->
+         <!----------------------------------------SEARCH-SECTION--------------------->
+         <section class="search">
+           <input type="search" value="Gondia" class="inp" id="ser" onclick="hideerr()">
+           <button class="searchbtn" onclick="weather()">GetData</button>
+           <p class="error"></p>
+         </section>
+         <!-------------------------////////-----SEARCH-SECTION----////////----------------->
+         <!-----------------------------------FIRST-PAGE------------------------------>
+         <section class="firstpage">
+           <h2 class="des">Discription</h2>
+           <h3 class="temp"><span class="tempval">00</span><sup>o</sup>c</h3>
+           <div class="min_max">
+            <p class="min">Min :-<span class="min_val">22</span><sup>0</sup>c</p>
+            <p class="max">Max :-<span class="max_val">23</span><sup>0</sup>c</p>
+           </div>
+         </section>
+         <!-------------------------/////////-----FIRST-SECTION------//////////////--------------->
+         <!----------------------------------------SECOND-SECTION-------------------------------->
+         <section class="secondpage">
+          <p>Wind Speed</p>
+          <p class="speed"><span class="speedval">2.6</span><span class="speedunit">km/h</span></p>
+         </section>
+         <!--------/////////////////////---------------SECOND-SECTION---/////////////------------------>
+         <!----------------------------------------THIRD-SECTION----------------------------------->
+         <section class="thirdpage">
+          <p>Humidity</p>
+          <p class="humidity"><span class="humidityval">80</span><span class="humidityunit">%</span></p>
+         </section>
+         <!---------------------////////////////----------THIRD-SECTION-----///////////---------------->
+         <!----------------------------------------FOURTH-SECTION-------------------------------------->
+         <section class="fourthpage">
+          <p>Sunrise-sunset</p>
+          <p class="sun"><span class="sunr"></span> - <span class="suns"></span></p>
+         </section>
+         <!------------------/////////////////////-------SEARCH-SECTION---/////////////------------------>
+         <!----------------------------------------FIFTH-SECTION----------------------------------------->
+         <section class="fifthpage">
+          <p>Latitude-longitude</p>
+          <p class="lanlat"><span class="lan"></span> - <span class="lat"></span></p>
+         </section>
+         <!--------------------------////////////////----FIFTH-SECTION-----//////////////---------------->
+         <!------------------------------------------FOOTER-END------------------------------------------->
+         <footer>
+           <div class="datesec">
+           <p class="dateval">Date</p>
+           <p class="dayval">day</p>
+           <p class="timeval">time</p>
+          </div>
+          <div class="follow">
+            <p>Follow me :-</p>
+            <a href="https://www.facebook.com/aditya.chandrikapure"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-chandrikapure-6b731a1b6/"> <i class="fa fa-linkedin-square"></i></a>
+            <a href="https://twitter.com/AdityaChandrik1?s=09"> <i class="fa fa-twitter-square"></i></a>
+          </div>
+          <div class="create">
+            <h3> &copy; Created by Aditya chandrikapure</h3>
+          </div>
+         </footer>
+         <!---------------------///////////----------FOOTER-SECTION--///////////////////------------------->
+         <script src="js/javascript.js"></script>
+        </section>
+    </body>
+</html>
